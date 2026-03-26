@@ -1,0 +1,152 @@
+/* --- Estilos Generales --- */
+:root {
+    --white: #ffffff;
+    --beige-light: #fbf9f6; /* Color beige clarito */
+    --beige-dark: #d2b48c; /* Color beige para acentos */
+    --black: #111111;
+    --font-heading: 'Playfair Display', serif; /* Elegante para títulos */
+    --font-body: 'Lato', sans-serif; /* Muy legible para texto */
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: var(--font-body);
+    background-color: var(--white);
+    color: var(--black);
+    line-height: 1.6;
+}
+
+h1, h2, h3 {
+    font-family: var(--font-heading);
+    font-weight: 700;
+}
+
+p {
+    margin-bottom: 1.5rem;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+    transition: color 0.3s ease;
+}
+
+/* --- Navegación (Header) --- */
+header {
+    background-color: var(--beige-light);
+    padding: 1rem 2rem;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 2rem;
+}
+
+.nav-links a:hover {
+    color: var(--beige-dark);
+}
+
+/* --- Sección Hero (Imagen y Título) --- */
+.hero {
+    background-color: var(--white);
+    padding: 6rem 2rem;
+    text-align: center;
+}
+
+.hero-content {
+    max-width: 900px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+}
+
+.hero-img {
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    object-fit: cover;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    border: 5px solid var(--beige-light);
+}
+
+.hero-text h2 {
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+    color: var(--black);
+}
+
+.hero-text p {
+    font-size: 1.1rem;
+    color: #555;
+    font-weight: 400;
+}
+
+/* --- Secciones de Contenido --- */
+.content-section {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 6rem 2rem;
+    text-align: center;
+}
+
+.content-section h3 {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+    border-bottom: 2px solid var(--beige-dark);
+    display: inline-block;
+    padding-bottom: 0.5rem;
+}
+
+.beige-bg {
+    background-color: var(--beige-light);
+}
+
+/* --- Pie de Página (Footer) --- */
+footer {
+    background-color: var(--black);
+    color: var(--white);
+    padding: 4rem 2rem;
+    text-align: center;
+}
+
+.quote {
+    font-family: var(--font-heading);
+    font-size: 1.5rem;
+    font-style: italic;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.quote cite {
+    display: block;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 400;
+    margin-top: 1rem;
+    color: #aaa;
+}
