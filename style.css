@@ -1,152 +1,67 @@
-/* --- Estilos Generales --- */
 :root {
-    --white: #ffffff;
-    --beige-light: #fbf9f6; /* Color beige clarito */
-    --beige-dark: #d2b48c; /* Color beige para acentos */
-    --black: #111111;
-    --font-heading: 'Playfair Display', serif; /* Elegante para títulos */
-    --font-body: 'Lato', sans-serif; /* Muy legible para texto */
-}
-
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+    --white: #FFFFFF;
+    --gold: #C59434;
+    --grey: #333333;
+    --pink: #C71585;
+    --soft-pink: #FFF0F5;
+    --beige: #FDF5E6;
 }
 
 body {
-    font-family: var(--font-body);
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+    color: var(--grey);
     background-color: var(--white);
-    color: var(--black);
-    line-height: 1.6;
 }
 
-h1, h2, h3 {
-    font-family: var(--font-heading);
-    font-weight: 700;
-}
-
-p {
-    margin-bottom: 1.5rem;
-}
-
-a {
-    text-decoration: none;
-    color: inherit;
-    transition: color 0.3s ease;
-}
-
-/* --- Navegación (Header) --- */
 header {
-    background-color: var(--beige-light);
-    padding: 1rem 2rem;
+    background: var(--white);
+    padding: 20px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
     position: sticky;
     top: 0;
     z-index: 100;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
 }
 
 .navbar {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    max-width: 1200px;
+    max-width: 1100px;
     margin: 0 auto;
 }
 
-.logo {
-    font-size: 1.5rem;
-    font-weight: 700;
-}
+.logo { color: var(--pink); font-family: 'Playfair Display'; }
 
-.nav-links {
-    list-style: none;
-    display: flex;
-    gap: 2rem;
-}
+.nav-links { list-style: none; display: flex; gap: 20px; }
 
-.nav-links a:hover {
-    color: var(--beige-dark);
-}
+.nav-links a { text-decoration: none; color: var(--grey); font-weight: bold; }
 
-/* --- Sección Hero (Imagen y Título) --- */
-.hero {
-    background-color: var(--white);
-    padding: 6rem 2rem;
-    text-align: center;
-}
-
-.hero-content {
-    max-width: 900px;
-    margin: 0 auto;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 2rem;
-}
+.hero { background: var(--soft-pink); padding: 60px 20px; text-align: center; }
 
 .hero-img {
-    width: 250px;
-    height: 250px;
+    width: 220px; height: 220px;
     border-radius: 50%;
-    object-fit: cover;
-    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
-    border: 5px solid var(--beige-light);
+    border: 6px solid var(--white);
+    box-shadow: 0 5px 20px rgba(0,0,0,0.1);
 }
 
-.hero-text h2 {
-    font-size: 2.5rem;
-    margin-bottom: 0.5rem;
-    color: var(--black);
+.hero-text h2 { font-family: 'Playfair Display'; font-size: 2.5rem; color: var(--gold); }
+
+.content-section { padding: 80px 20px; text-align: center; }
+
+.content-section h3 { font-family: 'Playfair Display'; font-size: 2rem; color: var(--gold); }
+
+.card {
+    background: white;
+    max-width: 700px;
+    margin: 20px auto;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.05);
 }
 
-.hero-text p {
-    font-size: 1.1rem;
-    color: #555;
-    font-weight: 400;
-}
+.rosa-bg { background-color: var(--soft-pink); }
+.beige-bg { background-color: var(--beige); }
 
-/* --- Secciones de Contenido --- */
-.content-section {
-    max-width: 800px;
-    margin: 0 auto;
-    padding: 6rem 2rem;
-    text-align: center;
-}
-
-.content-section h3 {
-    font-size: 2rem;
-    margin-bottom: 2rem;
-    border-bottom: 2px solid var(--beige-dark);
-    display: inline-block;
-    padding-bottom: 0.5rem;
-}
-
-.beige-bg {
-    background-color: var(--beige-light);
-}
-
-/* --- Pie de Página (Footer) --- */
-footer {
-    background-color: var(--black);
-    color: var(--white);
-    padding: 4rem 2rem;
-    text-align: center;
-}
-
-.quote {
-    font-family: var(--font-heading);
-    font-size: 1.5rem;
-    font-style: italic;
-    max-width: 600px;
-    margin: 0 auto;
-}
-
-.quote cite {
-    display: block;
-    font-size: 1rem;
-    font-style: normal;
-    font-weight: 400;
-    margin-top: 1rem;
-    color: #aaa;
-}
+footer { background: var(--grey); color: white; padding: 40px; text-align: center; }
